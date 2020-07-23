@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="all.css" media="screen" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card bg-img">
+        <div class="box">
+          <form id="myform" action="/my-form-page" method="POST">
+            <!--CREATE RADIO BUTTON PER OGNI ESPERIENZA-->
+            <!---->
+            <div class="select-icons">
+              <!--<input type="image" id="climbing-icon">Climbing</input>-->
+              <label id="climbing-icon" for="climbing">Climbing</label>
+              <select id="climbing-select">
+                <option value="one-day">One Day</option>
+              </select>
+              <label id="trekking-icon" for="trekking">Trekking</label>
+              <select id="trekking-select">
+                <option value="">--Please choose an option--</option>
+                <option value="morning">Day</option>
+                <option value="evening">Nigth</option>
+              </select>
+              <label id="bike-icon" for="bike">Bike</label>
+              <select id="bike-select">
+                <option value="">--Please choose an option--</option>
+                <option value="one-day">One Day</option>
+                <option value="two-days">Two Days</option>
+                <option value="three-days">Three Days</option>
+              </select>
+            </div>
+            <div class="dates" data-type="none">
+              <label for="checkin">Check in</label>
+              <div>
+                <input type="date" value="9 July, 2016" id="checkin" />
+              </div>
+              <label for="checkout">Check out</label>
+              <div>
+                <input type="date" value="16 July, 2016" id="checkout" />
+              </div>
+              <label for="ticketNum">Number of tickets:</label>
+              <input id="ticketNum" type="number" name="ticketNum" value="1" />
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="username" name="user_name" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="email-address" name="user_email" />
+              </div>
+              <div></div>
+              <input id="submit-btn" class="btn" type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="all.js"></script>
+  </body>
+</html>
