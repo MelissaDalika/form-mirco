@@ -14,12 +14,19 @@ app.get("/page", (req, res) => {
   res.status(200).sendFile(path.join(__dirname, "/views/formpage.html"));
 });
 
-app.post("/submit",(req, res) => {
+app.get("/submit", (req, res) => {
   //res.send(req.body);
   res.send();
   console.log(req.body);
 });
 
+app.post("/submit", (req, res) => {
+  //res.send(req.body);
+  res.send();
+  console.log(req.body);
+});
+
+/*
 
 //INPUT RADIO BUTTONS
 
@@ -50,7 +57,7 @@ document.getElementById("ConfirmData").addEventListener("click", () => {
 });
 
 //Chiamata POST 
-function postData (name, email, tickets, datein, dateout) {
+function postData(name, email, tickets, datein, dateout) {
   var data = JSON.stringify({
     "name": name,
     "email": email,
@@ -60,5 +67,18 @@ function postData (name, email, tickets, datein, dateout) {
   });
 }
 
+// NATIONALITY
+
+let nationalityList;
+
+app.get("/nationlist", (req, res) => {
+  res.json(nacionalitylist)
+})
+
+axios
+  .get("/nationlist")
+  .then()
+
+*/
 
 app.listen(3000, () => console.log("Listening on port 3000"));

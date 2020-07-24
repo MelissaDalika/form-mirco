@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container d-flex border">
-    <div class="row">
-      <div class="col-4">
-        <img src="trekking.jpg" alt="mountain">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="all.css" media="screen" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card bg-img">
+        <div class="box">
+          <form id="myform" action="/submit" method="POST">
+            <!--DATI PER TICKET-->
+            <div>
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+              <label for="name">Enter your last name: </label>
+              <input type="text" name="lastName" id="lastName" required>
+            </div>
+            <label for="birthday">Birthday Date</label>
+            <div>
+              <input type="date" value="16 July, 2016" id="checkout" />
+            </div>
+            <div>
+            <label for="nationality-choice">Select Nationality:</label>
+            <input
+              list="nationalityList"
+              id="nationList"
+              name="nationality-choice"
+            />
+            <datalist id="nationalityList">
+              <option value="México"> </option>
+              <option value="Brasil"> </option>
+              <option value="Italia"> </option>
+              <option value="Bora Bora"> </option>
+              <option value="Tailandia"> </option>
+            </datalist>
+          </div>
+          </form>
+        </div>
       </div>
-      <div class="col-4">
-  <form action="/my-form-page" method="post">
-    <div class="dates" data-type="none">
-			<label for="checkin">Check in</label>
-			<div class="input-text">
-				<input type="datetime" value="9 July, 2016" id="checkin" readonly>
-				<div class="icon pop-up"></div>
-			</div>
-			<label for="checkout">Check out</label>
-			<div class="input-text">
-				<input type="datetime" value="16 July, 2016" id="checkout" readonly>
-				<div class="icon pop-up"></div>
-			</div>
-    <ul>
-      <li>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name">
-      </li>
-      <li>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_email">
-      </li>
-     </ul>
-     <input type="image" alt="Click me!" src="..." width="80" height="30">
-  </form>
-</div>
-</div>
-</div>
-</body>
+    </div>
+    <script src="all.js"></script>
+  </body>
 </html>
