@@ -6,7 +6,7 @@ form {
   margin: 0;
   max-width: 40vw;
   max-height: fit-content;
-}
+} 
 
 label {
   color: rgb(15, 62, 107);
@@ -33,23 +33,62 @@ ul {
   list-style: none;
 }
 
+/*SELECT ICONS*/
+.select-icons {
+  display: inline-block;
+}
+
 #bike-icon {
   background-image: url(bike_icon.svg);
   background-repeat: no-repeat;
   background-size: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 #trekking-icon {
   background-image: url(hiking_icon.svg);
   background-repeat: no-repeat;
   background-size: 50px;
+  height: 50px;
+  width: 50px;
+ 
 }
 
 #climbing-icon {
   background-image: url(climb_icon.svg);
   background-repeat: no-repeat;
   background-size: 50px;
+  height: 50px;
+  width: 50px;
 }
+
+.icon-selector input{
+  margin:0;padding:0;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+}
+
+/* HIDE RADIO */
+.hiddenradio [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+.hiddenradio [type="radio"] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.hiddenradio [type="radio"]:checked + img::after {
+  background-color: cadetblue;
+  border: 10px solid red;
+}
+
 
 .container {
   display: flex;
@@ -89,5 +128,5 @@ ul {
   background-color: rgb(125, 179, 204);
   border-radius: 8px;
 
-  margin: 1rem;
+  margin: 0.5rem;
 }
