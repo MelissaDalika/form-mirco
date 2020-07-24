@@ -6,7 +6,7 @@ form {
   margin: 0;
   max-width: 40vw;
   max-height: fit-content;
-} 
+}
 
 label {
   color: rgb(15, 62, 107);
@@ -33,6 +33,10 @@ ul {
   list-style: none;
 }
 
+.d-none {
+  display: none;
+}
+
 /*SELECT ICONS*/
 .select-icons {
   display: inline-block;
@@ -52,7 +56,7 @@ ul {
   background-size: 50px;
   height: 50px;
   width: 50px;
- 
+
 }
 
 #climbing-icon {
@@ -63,15 +67,16 @@ ul {
   width: 50px;
 }
 
-.icon-selector input{
-  margin:0;padding:0;
-  -webkit-appearance:none;
-     -moz-appearance:none;
-          appearance:none;
+.icon-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* HIDE RADIO */
-.hiddenradio [type=radio] { 
+.hiddenradio [type=radio] {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -79,12 +84,12 @@ ul {
 }
 
 /* IMAGE STYLES */
-.hiddenradio [type="radio"] + img {
+.hiddenradio [type="radio"]+img input {
   cursor: pointer;
 }
 
 /* CHECKED STYLES */
-.hiddenradio [type="radio"]:checked + img::after {
+.hiddenradio [type="radio"]:checked+im input {
   background-color: cadetblue;
   border: 10px solid red;
 }
@@ -114,17 +119,17 @@ ul {
 }
 
 .box {
- background-color: white; 
- display: flex;
- justify-content: center;
- max-width: 30vw;
- max-height: fit-content;
- border-radius: 8px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  max-width: 30vw;
+  max-height: fit-content;
+  border-radius: 8px;
 }
 
 
 .btn {
-  color:  rgb(15, 62, 107);
+  color: rgb(15, 62, 107);
   background-color: rgb(125, 179, 204);
   border-radius: 8px;
 
