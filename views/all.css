@@ -1,20 +1,29 @@
 body {
   background-color: #275c7a;
+  font-family: 'Mulish', sans-serif;
 }
 
 form {
-  margin: 0;
-  max-width: 40vw;
-  max-height: fit-content;
+  padding: 6rem;
+  background-color: rgba(126, 201, 231, 0.288);
+  justify-content: center;
+  border-radius: 8px;
 }
 
 label {
   color: rgb(15, 62, 107);
+  font-weight: bold;
   display: block;
   font-size: 16px;
   height: 16px;
   margin-top: 20px;
   margin-bottom: 5px;
+}
+
+select {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  border-radius: 2rem;
 }
 
 input {
@@ -67,29 +76,18 @@ ul {
   width: 50px;
 }
 
-.icon-selector input {
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 /* HIDE RADIO */
 .hiddenradio [type=radio] {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
+visibility: hidden;
 }
 
 /* IMAGE STYLES */
-.hiddenradio [type="radio"]+img input {
+.hiddenradio [type="radio"]+img {
   cursor: pointer;
 }
 
 /* CHECKED STYLES */
-.hiddenradio [type="radio"]:checked+im input {
+.hiddenradio [type="radio"]:checked+img {
   background-color: cadetblue;
   border: 10px solid red;
 }
@@ -109,7 +107,7 @@ ul {
 }
 
 .card.bg-img {
-  background-image: url(backpackers-mountains.jpg);
+  background-image: url(bg-landscape.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -118,20 +116,12 @@ ul {
   border-radius: 8px;
 }
 
-.box {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  max-width: 30vw;
-  max-height: fit-content;
-  border-radius: 8px;
-}
-
 
 .btn {
   color: rgb(15, 62, 107);
   background-color: rgb(125, 179, 204);
   border-radius: 8px;
-
+  width: 20vw;
   margin: 0.5rem;
+  align-self: center;
 }

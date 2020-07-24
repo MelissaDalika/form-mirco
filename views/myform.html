@@ -7,34 +7,34 @@
   <title>Document</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="all.css" media="screen" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,800;1,200;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="card bg-img">
-      <div class="box">
         <form id="myform" action="/submit" method="POST">
           <!--CREATE RADIO BUTTON PER OGNI ESPERIENZA-->
 
-          <div class="icon-selector hiddenradio select-icons">
-            <div>
-              <input class="icon-selector" type="radio" name="climb" value="Climbing"><img id="climbing-icon" /></input>
+          <div class="hiddenradio select-icons">
+            
+              <input type="radio" name="climb" value="Climbing"><img id="climbing-icon" /></input>
               <label for="climbing-icon">Climbing</label>
               <select id="climbing-select">
                 <option value="one-day">One Day</option>
               </select>
-            </div>
-            <div>
-              <input class="icon-selector" type="radio" name="climb" value="Trekking"><img id="trekking-icon" /></input>
+            
+            
+              <input type="radio" name="climb" value="Trekking"><img id="trekking-icon" /></input>
               <label for="trekking-icon">Trekking</label>
               <select id="trekking-select">
                 <option value="">--Please choose an option--</option>
                 <option value="morning">Day</option>
                 <option value="evening">Nigth</option>
               </select>
-            </div>
-            <div>
-              <input class="icon-selector" type="radio" name="climb" value="Bike"><img id="bike-icon" /></input>
+            
+            
+              <input type="radio" name="climb" value="Bike"><img id="bike-icon" /></input>
               <label for="bike-icon">Bike</label>
               <select id="bike-select">
                 <option value="">--Please choose an option--</option>
@@ -42,7 +42,7 @@
                 <option value="two-days">Two Days</option>
                 <option value="three-days">Three Days</option>
               </select>
-            </div>
+            
           </div>
           <div class="dates" data-type="none">
             <label for="checkin">Check in</label>
@@ -63,12 +63,11 @@
               <label for="mail">E-mail:</label>
               <input type="email" id="email-address" name="user_email" />
             </div>
-            <div>
-              <input id="submit-btn" class="btn" type="submit" value="Send" />
-            </div>
+          </div>
+          <div>
+            <input id="submit-btn" class="btn" type="submit" value="Send" />
           </div>
         </form>
-      </div>
     </div>
   </div>
   <script src="all.js"></script>
