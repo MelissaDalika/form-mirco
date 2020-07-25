@@ -7,67 +7,70 @@
   <title>Document</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="all.css" media="screen" />
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,800;1,200;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,600;0,800;1,200;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="card bg-img">
-        <form id="myform" action="/submit" method="POST">
-          <!--CREATE RADIO BUTTON PER OGNI ESPERIENZA-->
-
-          <div class="hiddenradio select-icons">
-            
-              <input type="radio" name="climb" value="Climbing"><img id="climbing-icon" /></input>
-              <label for="climbing-icon">Climbing</label>
-              <select id="climbing-select">
+      <form id="myform" action="/submit" method="POST">
+        <!--CREATE RADIO BUTTON PER OGNI ESPERIENZA-->
+        <div class="hiddenradio select-icons">
+          <span class="box-select">
+          <label for="climbing-icon">Climbing</label>
+          <input type="radio" name="climb" value="Climbing"><img id="climbing-icon" /></input>
+        </span>
+          <!--<select id="climbing-select">
                 <option value="one-day">One Day</option>
-              </select>
-            
-            
-              <input type="radio" name="climb" value="Trekking"><img id="trekking-icon" /></input>
-              <label for="trekking-icon">Trekking</label>
-              <select id="trekking-select">
+              </select> -->
+              <span class="box-select">
+          <label for="trekking-icon">Trekking</label>    
+          <input type="radio" name="climb" value="Trekking"><img id="trekking-icon" /></input>
+        </span>
+          <!--<select id="trekking-select">
                 <option value="">--Please choose an option--</option>
                 <option value="morning">Day</option>
                 <option value="evening">Nigth</option>
-              </select>
-            
-            
-              <input type="radio" name="climb" value="Bike"><img id="bike-icon" /></input>
-              <label for="bike-icon">Bike</label>
-              <select id="bike-select">
+              </select> -->
+          <span class="box-select">   
+          <label for="bike-icon">Bike</label>    
+          <input type="radio" name="climb" value="Bike"><img id="bike-icon" /></input>
+          </span> 
+          <!--<select id="bike-select">
                 <option value="">--Please choose an option--</option>
                 <option value="one-day">One Day</option>
                 <option value="two-days">Two Days</option>
                 <option value="three-days">Three Days</option>
-              </select>
-            
-          </div>
-          <div class="dates" data-type="none">
-            <label for="checkin">Check in</label>
-            <div>
-              <input type="date" value="9 July, 2016" id="checkin" />
-            </div>
-            <label for="checkout">Check out</label>
-            <div>
-              <input type="date" value="16 July, 2016" id="checkout" />
-            </div>
-            <label for="ticketNum">Number of tickets:</label>
-            <input id="ticketNum" type="number" name="ticketNum" value="1" />
-            <div>
-              <label for="name">Name:</label>
-              <input type="text" id="username" name="user_name" />
-            </div>
-            <div>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="email-address" name="user_email" />
-            </div>
-          </div>
+              </select> -->
+        </div>
+        <div class="dates" data-type="none">
+          <label for="checkin">Check in</label>
           <div>
-            <input id="submit-btn" class="btn" type="submit" value="Send" />
+            <input type="date" value="9 July, 2016" id="checkin" />
           </div>
-        </form>
+          <label for="checkout">Check out</label>
+          <div>
+            <input type="date" value="16 July, 2016" id="checkout" />
+          </div>
+        </div>
+        <div>
+          <label for="ticketNum">Number of tickets:</label>
+          <input id="ticketNum" type="number" name="ticketNum" value="1" />
+        </div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="username" name="user_name" />
+        </div>
+        <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="email-address" name="user_email" />
+        </div>
+        <button type="submit" id="submit" class="btn">
+          Submit
+        </button>
+      </form>
     </div>
   </div>
   <script src="all.js"></script>

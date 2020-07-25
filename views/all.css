@@ -4,7 +4,8 @@ body {
 }
 
 form {
-  padding: 6rem;
+  display: block;
+  padding: 4rem;
   background-color: rgba(126, 201, 231, 0.288);
   justify-content: center;
   border-radius: 8px;
@@ -36,6 +37,8 @@ input {
   line-height: 30px;
   outline: none;
   width: 100%;
+  color: gray;
+  margin: 0.5rem;
 }
 
 ul {
@@ -76,27 +79,45 @@ ul {
   width: 50px;
 }
 
+.box-select {
+  background-color: rgba(214, 209, 240, 0.562);
+  background-size: 80px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 1px 1px 3px #cbc7f7;
+
+
+}
+
 /* HIDE RADIO */
-.hiddenradio [type=radio] {
-visibility: hidden;
+.hiddenradio input[type=radio] {
+ visibility: hidden;
+ /*display:none;*/
 }
 
 /* IMAGE STYLES */
-.hiddenradio [type="radio"]+img {
+.hiddenradio input[type="radio"]+img {
   cursor: pointer;
+  border: 0;
+  width: 150px;
+  height: 150px;
+  transition: 100ms all;
+
 }
 
 /* CHECKED STYLES */
-.hiddenradio [type="radio"]:checked+img {
-  background-color: cadetblue;
-  border: 10px solid red;
+.hiddenradio input[type="radio"]:checked+img {
+  background-color: rgba(236, 77, 117, 0.712);
 }
 
 
 .container {
   display: flex;
   justify-content: center;
-
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -117,11 +138,13 @@ visibility: hidden;
 }
 
 
-.btn {
-  color: rgb(15, 62, 107);
+.btn{
+  color: white;
   background-color: rgb(125, 179, 204);
   border-radius: 8px;
-  width: 20vw;
-  margin: 0.5rem;
-  align-self: center;
+  width: 30vw;
+  height: 5vh;
+  margin-top: 4rem;
+  border: none;
+  display: block;
 }
